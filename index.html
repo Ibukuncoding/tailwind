@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-2xl font-bold">MyBlog</div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Categories</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Featured Posts Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Featured Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Featured Post 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://picsum.photos/id/1/200/300" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Post Title 1</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate porro deleniti aperiam, molestias, esse molestiae eveniet quia laborum ab, suscipit distinctio accusantium ipsa iure quas tempore et obcaecati accusamus?</p>
+                    </div>
+                </div>
+                <!-- Featured Post 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://picsum.photos/id/9/200/300" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Post Title 2</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nostrum neque quo aliquam suscipit necessitatibus voluptatem voluptates odit, eos nobis quos reiciendis, quae illo, commodi et illum non natus unde!</p>
+                    </div>
+                </div>
+                <!-- Featured Post 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://picsum.photos/id/18/200/300" alt="Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Post Title 3</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quidem cumque reiciendis. Laudantium culpa ad minus inventore obcaecati libero, nesciunt, veniam, et odit alias perspiciatis vitae repellat corrupti optio? Fugit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="py-8 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4 text-center">Categories</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm">Technology</span>
+                <span class="bg-green-500 text-white px-4 py-2 rounded-full text-sm">Lifestyle</span>
+                <span class="bg-red-500 text-white px-4 py-2 rounded-full text-sm">Travel</span>
+                <span class="bg-purple-500 text-white px-4 py-2 rounded-full text-sm">Food</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Recent Posts</h2>
+            <ul>
+                <li class="mb-4 border-b pb-2">
+                    <a href="#" class="text-xl font-semibold hover:underline">Travails of a child born into wedlock</a>
+                    <p class="text-gray-500 text-sm">Published on September 15, 2024</p>
+                </li>
+                <li class="mb-4 border-b pb-2">
+                    <a href="#" class="text-xl font-semibold hover:underline">Burna boy's grammy winning journey</a>
+                    <p class="text-gray-500 text-sm">Published on September 10, 2024</p>
+                </li>
+                <li class="mb-4 border-b pb-2">
+                    <a href="#" class="text-xl font-semibold hover:underline">Manchester united win the english premier league</a>
+                    <p class="text-gray-500 text-sm">Published on September 5, 2024</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section class="py-8 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+            <p class="mb-6">Stay updated with the latest posts and news.</p>
+            <form action="#" method="post" class="flex flex-col sm:flex-row justify-center items-center">
+                <input type="email" placeholder="Enter your email" class="p-2 rounded-l-lg border-none text-gray-900 mb-2 sm:mb-0 sm:mr-2" required>
+                <button type="submit" class="bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-6">
+        <div class="container mx-auto px-4 flex flex-col items-center">
+            <div class="flex space-x-4 mb-4">
+                <a href="#" class="text-gray-200 hover:text-white">Facebook</a>
+                <a href="#" class="text-gray-200 hover:text-white">Twitter</a>
+                <a href="#" class="text-gray-200 hover:text-white">Instagram</a>
+                <a href="#" class="text-gray-200 hover:text-white">LinkedIn</a>
+            </div>
+            <p class="mb-4">© 2024 MyBlog. All rights reserved.</p>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
